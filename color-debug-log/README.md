@@ -1,0 +1,31 @@
+
+# Color Debug Log for Unity
+
+A small tool to create situation-dependent and colored debug logs in Unity for easy differentiation.
+
+
+
+
+## Why the heck?!
+
+I developed this tool to have the possibility to quickly switch the debug logs on and off without commenting out or deleting the corresponding lines of code. 
+
+In addition, the debug settings overview allows the assignment of colors and the individual activation of debug logs.
+
+This makes it easier to distinguish between different systems. 
+
+## How to use
+
+- Download the lastest release from the [Release Page](https://github.com/RyanDavidBeck/color-debug-log-unity/releases/tag/Utility)
+- Install in Unity via _Assets &rarr; Import Package &rarr; Custom Package_
+- Add your prefered debug types in the enum `DebugType` in the _ColorDebugLog_ folder
+- A new debug setting is created in the resource folder, in which the color and the activation and deactivation of the individual types can be defined. &rarr;  This file is automatically updated as soon as `DebugType` is adjusted. 
+- A debug log is triggered by: `ColorDebug.Log("Your Message", DebugType.YourType); `
+
+## Screenshots
+
+![Screenshot Debug Settings](https://private-user-images.githubusercontent.com/205892724/436422924-1e5f385e-03eb-43a4-ae1b-4c0443fc6216.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDUzOTUyMTIsIm5iZiI6MTc0NTM5NDkxMiwicGF0aCI6Ii8yMDU4OTI3MjQvNDM2NDIyOTI0LTFlNWYzODVlLTAzZWItNDNhNC1hZTFiLTRjMDQ0M2ZjNjIxNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQyM1QwNzU1MTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wNzNmMTkwYTVmNjAxNDAzZDEwYTBjMGRiMWFmNzBlMWZhNTUzODQxNWJmYzI3ZjkxYmIyMmMyM2M0MWNkY2QzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.wJw-EE7Gm-ohydlSI-p8Ize0XtqwscHEeqooVbgreyQ)
+
+![Screenshot Debug Logs](https://private-user-images.githubusercontent.com/205892724/436422932-042d12ae-ee4f-4934-9db2-034014367b2e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDUzOTUzMzQsIm5iZiI6MTc0NTM5NTAzNCwicGF0aCI6Ii8yMDU4OTI3MjQvNDM2NDIyOTMyLTA0MmQxMmFlLWVlNGYtNDkzNC05ZGIyLTAzNDAxNDM2N2IyZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQyM1QwNzU3MTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ZTZiYzk1NTMzOTdiNDFiYmE5OTFmOGUxOGExZGVmODQwNGJlY2NlMTRmNWQ1MDZjZTRjZDI4OTM4YjU3ZTI3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.jwg6kj0Q7AoNrJg_ABVlRgNvqE_31qwSmti0pgZIq7A)
+
+![Screenshot Debug Code](https://private-user-images.githubusercontent.com/205892724/436422930-fbb48f4b-6618-46bf-928e-333cbc5c4261.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDUzOTUzMzQsIm5iZiI6MTc0NTM5NTAzNCwicGF0aCI6Ii8yMDU4OTI3MjQvNDM2NDIyOTMwLWZiYjQ4ZjRiLTY2MTgtNDZiZi05MjhlLTMzM2NiYzVjNDI2MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQyM1QwNzU3MTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01YTA1OWU3NWNmYjlhMDJjMzQyMDI0MDFlN2E2YzczODcxMzZiNmRhMTNkNTBkNDcxMWFkNjZkNWQxZDkwMTcyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.1Z73Mb_Muw0K0HCO29qcAIb6ggrRZK6rUYBPsGXgaIQ)

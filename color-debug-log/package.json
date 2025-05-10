@@ -1,0 +1,14 @@
+{
+  "name": "com.ryandavidbeck.color-debug-log-unity",
+  "version": "1.0.0",
+  "displayName": "Color Debug Log",
+  "description": "A flexible and colorful debug log system for Unity.",
+  "unity": "2020.3",
+  "author": {
+    "name": "Ryan David Beck",
+    "email": "hello@ryandavidbeck.com",
+    "url": "https://github.com/ryandavidbeck"
+  },
+  "dependencies": {
+  }
+}
